@@ -28,7 +28,7 @@ def main():
     start = time.time()
     
     processes = []
-    for i in range(1, 6):
+    for i in range(1, 100):
         p = Process(target=make_burger, args=(i,))
         processes.append(p)
         p.start()
